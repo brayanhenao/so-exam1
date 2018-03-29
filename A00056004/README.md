@@ -12,7 +12,7 @@ ___
 La imagen se descarga de [Debian 9](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.4.0-amd64-netinst.iso) como se muestra en la captura.
 ![](Screenshots/Descarga.png)
 
-Una vez tenemos la imagen, procedemos a verificar su MD5 para ver si la imagen no fue alterada por terceros. Para esto, utilizamos el programa [MD5 Checksum Utility](https://download.cnet.com/MD5-SHA-Checksum-Utility/3001-2092_4-10911445.html). Los checksum de cada imagen se encuentran an la página oficial de Debian [Checksums](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/MD5SUMS) 
+Una vez tenemos la imagen, procedemos a verificar su MD5 para ver si la imagen no fue alterada por terceros. Para esto, utilizamos el programa [MD5 Checksum Utility](https://download.cnet.com/MD5-SHA-Checksum-Utility/3001-2092_4-10911445.html). Los checksum de cada imagen se encuentran en la página oficial de Debian [Checksums](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/MD5SUMS).
 
 ![](Screenshots/MD5.png)
 
@@ -21,12 +21,12 @@ Abrimos el programa, seleccionamos la imagen y esperamos a que lea y genere los 
 
 #### Instalación
 
-Para instalarlo utilizamos [VirtualBox](https://www.virtualbox.org/wiki/Downloads), configuramos los recursos que le vamos a asignar (Memoria RAM, # Procesadores, tamaño del HDD), montamos la imagen en el disco de arranque. Una vez iniciado seguimos el proceso guiado.
+Para instalarlo utilizamos [VirtualBox](https://www.virtualbox.org/wiki/Downloads), configuramos los recursos que le vamos a asignar (Memoria RAM, # Procesadores, tamaño del HDD) y montamos la imagen en el disco de arranque.
 
 1. Una vez iniciada la máquina virtual, seleccionamos "Graphical Install", ya que es un modo más amigable con el usuario (el otro modo es nétamente por consola).
-2. Paso siguiente seleccionamos el idioma a utilizar (Español) al igual que el país (Colombia) y la distribución del teclado (Latinoamericano).
+2. Paso siguiente seleccionamos el idioma a utilizar (Español), al igual que el país (Colombia) y la distribución del teclado (Latinoamericano).
 3. Procedemos a la configuración de la red (nombre de la máquina y el dominio) y la configuración de usuario (contraseña de root y si queremos crear un nuevo usuario con su contraseña).
-4. Siguiendo con la instalación configuramos la partición de discos: utilizamos el modo guiado, seleccionamos el disco a usar (préviamente creado al agregar la máquina virtual), seleccionamos la opción "Todos los ficheros en una partición" y finalizamos el particionado del disco confirmando los cambios.
+4. Siguiendo con la instalación, configuramos la partición de discos: utilizamos el modo guiado, seleccionamos el disco a usar (previamente creado al agregar la máquina virtual), seleccionamos la opción "Todos los ficheros en una partición" y finalizamos el particionado del disco confirmando los cambios.
 5. Esperamos a que instale el sistema base y procedemos a configurar el gestor de paquetes, seleccionando la región y el servidor ftp a utilizar, en nuestro caso "debian.uniminuto.edu".
 6. Siguiendo, seleccionamos los programas adicionales que queremos instalar (como el entorno de escritorio, servidor web, servidor de impresión, SSH server) el único relevante y que debemos seleccionar es "SSH Server" ya que será usado posteriormente si se quiere conectar por medio de SSH desde otras máquinas.
 7. Como último paso, una vez descargados los paquetes previamente seleccionados nos pedirá instalar GRUB, que es el gestor de boot de linux (en el caso de que quiera se utilziado en la misma máquina junto con otro SO distinto). Aceptamos su instalación y seleccionamos el HDD en el cual quedará el lanzador.
@@ -53,11 +53,11 @@ Codename:       stretch
 ### Configuración interfaz de red y conexión con Putty
 
 #### Configuración interfaz tipo puente
-Para configurar una interfaz de red tipo puente procedos a abrir en VirtualBox la configuración de la máquina virtual previamente creada, nos dirigimos a la sección "Red" y seleccionamos la pestaña "Adaptador 2"
+Para configurar una interfaz de red tipo puente procedos a abrir en VirtualBox la configuración de la máquina virtual previamente creada, nos dirigimos a la sección "Red" y seleccionamos la pestaña "Adaptador 2".
 
 ![](Screenshots/RED_1.png)
 
-Habilitamos el adaptador y seleccionamos en "Conectado a" el adaptador a utilizar, en este caso "Adaptador puente" (esto para poder realizar una conexión con la máquina host por medio de SSH)
+Habilitamos el adaptador y seleccionamos en "Conectado a" el adaptador a utilizar, en este caso "Adaptador puente" (esto para poder realizar una conexión con la máquina host por medio de SSH).
 
 ![](Screenshots/RED_2.png)
 
