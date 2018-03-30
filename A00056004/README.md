@@ -89,3 +89,45 @@ apt-get install git tig -y
 Una vez instalados, se procede a hacer clone del repositorio actual en el que me encuentro trabajando, y posteriormente a usar el comando tig para listar el historial de los commits realizados para la solución del parcial.
 
 ![](Screenshots/TIG.png)
+
+### Exportar e importar máquina virtual
+#### Exportar
+Para exportar la máquina virtual previamente instalada y configurada hay que ir en VirtualBox a la pestaña Archivo, luego a la opción Exportar servicio virtualizado.
+
+![](Screenshots/EXPORT_1.png)
+
+Paso siguiente se selecciona la máquina a exportar (en nuestro caso se llama Debian_Server) y le damos en siguiente.
+
+![](Screenshots/EXPORT_2.png)
+
+Para finalziar seleccionamos la ruta en donde se va a guardar la máquina para luego ser importada, y le damos en siguiente. Realizado esto quedará completa la exportación de la máquina virtual y creará un archivo .ova que podrá ser importado luego.
+
+![](Screenshots/EXPORT_3.png)
+![](Screenshots/EXPORT_4.png)
+
+#### Importar
+Para importar la máquina previamente exportada, en VirtualBox vamos a la pestaña Archivo, luego a la opción Importar servicio virtualizado.
+
+![](Screenshots/IMPORT_1.png)
+
+Siguiendo, 
+
+![](Screenshots/IMPORT_2.png)
+
+
+
+### CentOS7 vs Debian 9
+
+
+| CentOS7 | Debian 9 |
+| ------- |----------|
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 3 |
+| 4 | 4 |
+| 5 | 5 |
+| 6 | 6 |
+| 7 | 7 |
+| 8 | 8 |
+| 9 | 9 |
+| 10 | 10 |
