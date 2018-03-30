@@ -110,11 +110,14 @@ Para importar la máquina previamente exportada, en VirtualBox vamos a la pesta�
 
 ![](Screenshots/IMPORT_1.png)
 
-Siguiendo, 
+Siguiendo, seleccionamos el archivo virtualizado (.ova) y le damos en siguiente.
 
 ![](Screenshots/IMPORT_2.png)
 
+Configuramos los detalles de la máquina (por si se le quiere agregar más procesadores o cambiar la memoria ram asignada, al igual que el nombre de la máquina virtual) y le damos en siguiente. Una vez realziado esto esperamos a que importe y luego la máquina podrá ser utilziada.
 
+![](Screenshots/IMPORT_3.png)
+![](Screenshots/IMPORT_4.png)
 
 ### CentOS7 vs Debian 9
 
