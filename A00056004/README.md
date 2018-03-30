@@ -23,7 +23,7 @@ Abrimos el programa, seleccionamos la imagen y esperamos a que lea y genere los 
 
 Para instalarlo utilizamos [VirtualBox](https://www.virtualbox.org/wiki/Downloads), configuramos los recursos que le vamos a asignar (Memoria RAM, # Procesadores, tamaño del HDD) y montamos la imagen en el disco de arranque.
 
-1. Una vez iniciada la máquina virtual, seleccionamos "Graphical Install", ya que es un modo más amigable con el usuario (el otro modo es nétamente por consola).
+1. Una vez iniciada la máquina virtual, seleccionamos "Graphical Install", ya que es un modo más amigable con el usuario (el otro modo es netamente por consola).
 2. Paso siguiente seleccionamos el idioma a utilizar (Español), al igual que el país (Colombia) y la distribución del teclado (Latinoamericano).
 3. Procedemos a la configuración de la red (nombre de la máquina y el dominio) y la configuración de usuario (contraseña de root y si queremos crear un nuevo usuario con su contraseña).
 4. Siguiendo con la instalación, configuramos la partición de discos: utilizamos el modo guiado, seleccionamos el disco a usar (previamente creado al agregar la máquina virtual), seleccionamos la opción "Todos los ficheros en una partición" y finalizamos el particionado del disco confirmando los cambios.
@@ -77,3 +77,15 @@ ip -a
 Una vez escrita la ip y el puerto (22 porque es SSH) le damos en ok. Si no hay errores, aparecerá una ventana solicitando un usuario y contraseña para poder ingresar a la máquina.
 
 ![](Screenshots/PUTTY_3.png)
+
+### Instalación git y tig
+Para instalar git y tig basta con utilizar el siguiente comando
+```console
+apt-get install git tig -y
+```
+
+![](Screenshots/INSTALL_GIT_TIG.png)
+
+Una vez instalados, se procede a hacer clone del repositorio actual en el que me encuentro trabajando, y posteriormente a usar el comando tig para listar el historial de los commits realizados para la solución del parcial.
+
+![](Screenshots/TIG.png)
