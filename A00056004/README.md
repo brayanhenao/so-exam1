@@ -122,15 +122,15 @@ Configuramos los detalles de la máquina (por si se le quiere agregar más proce
 ### CentOS7 vs Debian 9
 
 
-| CentOS7 | Debian 9 |
-| ------- |----------|
-| 1 | 1 |
-| 2 | 2 |
-| 3 | 3 |
-| 4 | 4 |
-| 5 | 5 |
-| 6 | 6 |
-| 7 | 7 |
-| 8 | 8 |
-| 9 | 9 |
-| 10 | 10 |
+| Característica a evaluar | CentOS7 | Debian 9 |
+| ------- |----------|----------|
+| Gestor de paquetes | RPM, yum | apt |
+| Entorno de escritorio disponible | GNOME | GNOME,KDE, Xfce |
+| Arquitecturas soportadas | x86, x86-64, IA-64, s390, s390x, alpha | x86, x86-64, IA-64, ppc, sparc32, sparc64, arm, hppa, mips, s390, s390x, alpha |
+| Orígenes | Distribución basada en Red Hat Enterprise Linux | Primeras distribuciones de linux (1993) |
+| Número aproximado de paquetes de software | 1660 | 36000 |
+| Uso (% del mercado respecto a las distribuciones de linux) | 20.4% | 31.9% |
+| Versión más liviana | 422 MB | 291 MB |
+| Soporte | Mantenimiento por 10 años y actualizaciones cerca de 6 años | Versiones LTS ofrecen soporte por 5 años |
+| Versión Kernel Linux | 3.10 | 4.9 |
+| Versión compilador C | GCC 4.1.1 | GCC 4.1.1, 3.4.6, 3.3.6, 2.95 |
